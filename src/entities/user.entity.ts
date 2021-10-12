@@ -7,8 +7,8 @@ import {
   OneToMany,
 } from 'typeorm';
 import * as bcrypt from 'bcrypt';
-import { Collection } from '../pictos/collection.entity';
-import { Picto } from '../pictos/picto.entity';
+import { Collection } from './collection.entity';
+import { Picto } from './picto.entity';
 
 @Entity()
 @Unique(['username'])

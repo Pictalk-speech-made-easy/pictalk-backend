@@ -6,10 +6,10 @@ import {
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { PictoRepository } from './picto.repository';
-import { User } from 'src/auth/user.entity';
-import { Picto } from './picto.entity';
+import { User } from 'src/entities/user.entity';
+import { Picto } from '../entities/picto.entity';
 import { CreatePictoDto } from './dto/create-picto.dto';
-import { Collection } from './collection.entity';
+import { Collection } from '../entities/collection.entity';
 import { unlink } from 'fs';
 import { EditPictoDto } from './dto/edit-picto.dto';
 import { StarterPictoDto } from './dto/starterPicto.dto';

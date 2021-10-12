@@ -6,7 +6,7 @@ import {
   ManyToOne,
   OneToMany,
 } from 'typeorm';
-import { User } from '../auth/user.entity';
+import { User } from './user.entity';
 import { Picto } from './picto.entity';
 
 @Entity()

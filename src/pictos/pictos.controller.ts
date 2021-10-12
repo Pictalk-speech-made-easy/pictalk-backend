@@ -19,13 +19,13 @@ import {
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { GetUser } from 'src/auth/get-user.decorator';
-import { User } from 'src/auth/user.entity';
-import { Picto } from './picto.entity';
+import { User } from 'src/entities/user.entity';
+import { Picto } from '../entities/picto.entity';
 import { PictoService } from './pictos.service';
 import { CollectionService } from './collection.service';
 import { CreatePictoDto } from './dto/create-picto.dto';
 import { CreateCollectionDto } from './dto/create-collection.dto';
-import { Collection } from './collection.entity';
+import { Collection } from '../entities/collection.entity';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { imageFileFilter, editFileName } from './file-upload.utils';
 import { diskStorage } from 'multer';

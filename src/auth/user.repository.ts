@@ -1,5 +1,5 @@
 import { Repository, EntityRepository } from 'typeorm';
-import { User } from './user.entity';
+import { User } from '../entities/user.entity';
 import { AuthCredentialsDto } from './dto/auth-credentials.dto';
 import {
   ConflictException,

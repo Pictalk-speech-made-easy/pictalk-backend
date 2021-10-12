@@ -14,7 +14,7 @@ import {
 import { AuthCredentialsDto } from './dto/auth-credentials.dto';
 import { AuthService } from './auth.service';
 import { CreateUserDto } from './dto/create-user.dto';
-import { User } from './user.entity';
+import { User } from '../entities/user.entity';
 import { GetUser } from './get-user.decorator';
 import { EditUserDto } from './dto/edit-user.dto';
 import { AuthGuard } from '@nestjs/passport';
@@ -22,7 +22,7 @@ import { ResetPasswordDto } from './dto/reset-password.dto';
 import { ChangePasswordDto } from './dto/change-password.dto';
 import { PictoService } from 'src/pictos/pictos.service';
 import { CollectionService } from 'src/pictos/collection.service';
-import { Collection } from 'src/pictos/collection.entity';
+import { Collection } from 'src/entities/collection.entity';
 import { StarterCollectionDto } from 'src/pictos/dto/starterCollection.dto';
 import { StarterPictoDto } from 'src/pictos/dto/starterPicto.dto';
 @Controller('auth')

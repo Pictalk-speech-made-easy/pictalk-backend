@@ -1,8 +1,8 @@
 import { Injectable, NotFoundException, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { CollectionRepository } from './collection.repository';
-import { User } from '../auth/user.entity';
-import { Collection } from './collection.entity';
+import { User } from '../entities/user.entity';
+import { Collection } from '../entities/collection.entity';
 import { CreateCollectionDto } from './dto/create-collection.dto';
 import { unlink } from 'fs';
 import { EditCollectionDto } from './dto/edit-collection.dto';

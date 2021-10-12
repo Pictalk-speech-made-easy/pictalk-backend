@@ -1,12 +1,12 @@
 import { EntityRepository, Repository } from 'typeorm';
-import { Picto } from './picto.entity';
+import { Picto } from '../entities/picto.entity';
 import {
   Logger,
   InternalServerErrorException,
   NotFoundException,
 } from '@nestjs/common';
 import { CreatePictoDto } from './dto/create-picto.dto';
-import { User } from 'src/auth/user.entity';
+import { User } from 'src/entities/user.entity';
 import { EditPictoDto } from './dto/edit-picto.dto';
 import { unlink } from 'fs';
 

@@ -1,11 +1,11 @@
 import { Repository, EntityRepository } from 'typeorm';
-import { Collection } from './collection.entity';
+import { Collection } from '../entities/collection.entity';
 import {
   Logger,
   InternalServerErrorException,
   NotFoundException,
 } from '@nestjs/common';
-import { User } from 'src/auth/user.entity';
+import { User } from 'src/entities/user.entity';
 import { CreateCollectionDto } from './dto/create-collection.dto';
 import { EditCollectionDto } from './dto/edit-collection.dto';
 import { unlink } from 'fs';
